@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Page</title>
+  
+  <link rel="stylesheet" href="{% static 'css/style2.css'%}"/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+
+<style>
+  .btn {
+    background-color: blanchedalmon;
+    border-radius: 100px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .btn:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+.footer-Zero{
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .footer-rights{
+    text-align:center;
+    padding:22px 0;
+}
+</style>
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <section class='left'>Portfolio</section>
+      <section class='right'>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#footer">About</a></li>
+          <li><a href="#thirdsection">Project</a></li>
+          <li><a href="#secondsection">Education</a></li>
+          <li><a href="'tel:+917057809140'">Contact Me</a></li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <main>
+    <section class='firstsection'>
+    <div class='leftsection'>
+      Hello I am <span class="black">Abhishek</span> & 
+     <div> I am a</div>
+     <span id="element"></span>
+      <div class="button">
+        <a href="https://drive.google.com/file/d/1a2Y4ilrYs3v-3Nu-Qyc9gSbbTMkogsLp/view?usp=drive_link" download="Resume_Abhishek.pdf" target="_blank"><button class="btn" role="button">Downlode CV</button></a>
+       <a href="https://www.linkedin.com/in/abhishek-j-265ba420b" target="_blank"><button class="btn" role="button">Visit LinkedIn</button></a> 
+      </div>
+     </div>
+      
+    <div class='rightsection'>
+      <img src="{% static 'images/webdev.png' %}" alt=" yooo sorry">
+    </div>
+    </section>
+    <section class="secondsection">
+      <h1>Education</h1>
+      <div class="box-HoriLine">
+        <div class="vertical-line">
+        <img class="img-top" src="{% static 'images/education.png' %}" alt=" yooo sorry">
+          <div class="vertical-title">
+            SSC (2012-2017)
+          </div>
+          <div class="vertical-desc">
+            Compleated 10th From Anant English School,Satara
+            With 82.20% Score
+          </div>
+        </div>
+        <div class="vertical-line">
+        <img class="img-top" src="{% static 'images/education.png' %}" alt=" yooo sorry">
+          <div class="vertical-title">
+            HSC (2017-2019)
+          </div>
+          <div class="vertical-desc">
+            Compleated 10+2 From Yashwantrao Chavan Institute of Science,Satara
+            With 82.20% Score
+          </div>
+        </div>
+        <div class="vertical-line">
+        <img class="img-top" src="{% static 'images/education.png' %}" alt=" yooo sorry">
+          <div class="vertical-title">
+            B.sc CS (2019-2022)
+          </div>
+          <div class="vertical-desc">
+            Compleated Under Graduation From LBS College, Satara With 75.56% Score
+          </div>
+        </div>
+        <div class="vertical-line">
+        <img class="img-top" src="{% static 'images/education.png' %}" alt=" yooo sorry">
+          <div class="vertical-title">
+           M.Sc CS (2022-2204)
+          </div>
+          <div class="vertical-desc">
+            Compleating Post Graduation From Shivaji University,Kolhapur With 70.14% Score
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    <section class="thirdsection">
+      <h1>Project</h1>
+      <div class="box-HoriLine">
+        <div class="vertical-line">
+        <img class="img-top" src="{% static 'images/project.png' %}" alt=" yooo sorry">
+          <div class="vertical-title">
+            Bookasia (Online Book purchasing website)
+          </div>
+          <div class="vertical-desc">
+            Bookasia: An innovative online book service developed using HTML, CSS, Bootstrap, Java, MySQL, and 
+          Tomcat. 
+          </div>
+        </div>
+        <div class="vertical-line">
+        <img class="img-top" src="{% static 'images/project.png' %}" alt=" yooo sorry">
+          <div class="vertical-title">
+            weather web Application
+          </div>
+          <div class="vertical-desc">
+            Introducing my weather application, a sleek and user-friendly tool developed using HTML, CSS, JavaScript, and integrated with the OpenWeather API. 
+          </div>
+        </div>
+        <div class="vertical-line">
+        <img class="img-top" src="{% static 'images/project.png' %}" alt=" yooo sorry">
+          <div class="vertical-title">
+            The Dairy Management System
+          </div>
+          <div class="vertical-desc">
+            The Dairy Management System project based on c#.NET programming language.It calculate daily dairy milk collection. And Maintain Record of collection
+          </div>
+        </div>
+        <div class="vertical-line">
+        <img class="img-top" src="{% static 'images/project.png' %}" alt=" yooo sorry">
+          <div class="vertical-title">
+           Portfolio Website  
+          </div>
+          <div class="vertical-desc">
+            The website is developed using python with Django framwork 
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+ 
+ <footer>
+  <div class="footer">
+    <div class="footer-first">
+      <h3>Abhishek's Portfolio</h3>
+    </div>
+    <div class="footer-second">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/abhishek-j-265ba420b">Linked In</a></li>
+        <li><a href=" https://github.com/abhi5046">Git Hub</a></li>
+        <li><a href="https://www.hackerrank.com/profile/abhishekjagtap52">HackerRank</a></li>
+        <li><a href= "mailto: abhishekjagtap5046@gmail.com">Email</a></li>
+      </ul>
+    </div>
+    <div class="footer-third">
+      <ul>
+        <li><a href="">About</a></li>
+        <li><a href="">Project</a></li>
+        <li><a href="">Education</a></li>
+        <li><a  href= "mailto: abhishekjagtap5046@gmail.com">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+   <div class="footer-Zero">
+     <h3>CAREER OBJECTIVE:</h3>
+     <div>Interested to working in this Organization & seeking a challenging career to utilize my</div>
+     <div>skills, own domain knowledge to contribute my best and aimed efforts, thus helping in</div>
+     growth of organization.
+   </div>
+   <div class="footer-rights">
+     &#169; All rights reserved | Abhishek Jagtap | 2024
+   </div>
+
+ </footer>
+
+  <!-- <img src="{% static 'images/luffy.jpg' %}" alt=" yooo sorry"> -->
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
+  <script>
+    alert("⚠️Please open site in Desktop Mode, Sorry for inconvenience ⚠️ ");
+    var typed = new Typed('#element', {
+      strings: ['Developer', 'Programmer','Computer Science Student'],
+      typeSpeed: 50,
+    });
+  </script>
+  
+</body>
+</html>
